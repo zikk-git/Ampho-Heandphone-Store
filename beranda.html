@@ -20,32 +20,35 @@
         </header>
 
         <nav>
-        <ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Cari produk...">
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-            <a href="beranda.html">
-                <i class="bi bi-house-fill"></i> Beranda
-            </a>
-            <a href="#">
-                <i class="bi bi-grid-fill"></i> Produk
-            </a>
-            <li>
-                <a href="#" onclick="tampilkanKeranjang()">
-                    <i class="bi bi-cart-fill"></i> 
-                    Keranjang (<span id="jumlah-keranjang">0</span>)
+            <ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari produk...">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <a href="beranda.html">
+                    <i class="bi bi-house-fill"></i> Beranda
                 </a>
-            </li>
-        </ul>
+                <a href="#">
+                    <i class="bi bi-grid-fill"></i> Produk
+                </a>
+                <li>
+                    <a href="#" onclick="tampilkanKeranjang()">
+                        <i class="bi bi-cart-fill"></i> 
+                        Keranjang (<span id="jumlah-keranjang">0</span>)
+                    </a>
+                </li>
+            </ul>
       </nav>
+
       <div class="container">
         <div class="card-produk">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aOSzr5iSd68cSdWa4tVA9Gmq5wKuyLA-tOQOhlHs0g&s=10" alt="nubia redmagic 11 prro">
-            <h4>Nubia Redmagic 11 Pro</h4>
-            <p>Rp 22.380.000</p>
+            <a href="redmagic.html" class="produk-deskripsi">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aOSzr5iSd68cSdWa4tVA9Gmq5wKuyLA-tOQOhlHs0g&s=10" alt="nubia redmagic 11 prro">
+                <h4>Nubia Redmagic 11 Pro</h4>
+                <p>Rp 22.380.000</p>
+            </a>
             <h2>
                 <button class="keranjang" onclick="tambahKeranjang('Nubia Redmagic 11 Pro', 22380000)">
                     <i class="bi bi-cart-fill"></i>
