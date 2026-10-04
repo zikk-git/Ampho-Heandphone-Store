@@ -66,6 +66,7 @@ nav a:hover {
 .search-bar {
     display: flex;
     margin-right: auto;
+    margin-left: 25px;
 }
 
 .search-bar input {
@@ -92,6 +93,17 @@ nav a:hover {
 
 .search-bar button:hover {
     background-color: #A4F3E6;
+}
+
+.tombol-kembali {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+
+    background-color: #0B101E;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .container {
