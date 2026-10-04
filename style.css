@@ -232,3 +232,101 @@ nav a:hover {
     background-color: #0B101E;
     font-size: 30px;
 }
+
+.container-keranjang {
+    margin: 20px;
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #2F6977;
+    border-radius: 10px;
+}
+
+.container-keranjang h1 {
+    margin-top: 0;
+    color: #1C2B42;
+}
+
+.item-keranjang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    background-color: #1C2B42;
+
+    border-radius: 8px;
+
+    color: white;
+}
+
+.item-info h3 {
+    margin: 0 0 8px;
+    color: #A4F3E6;
+}
+
+.item-info p {
+    margin: 0;
+    color: #FFD25A;
+}
+
+.hapus-produk {
+    padding: 8px 12px;
+
+    background-color: #FF7B25;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.hapus-produk:hover {
+    background-color: #cc5c15;
+}
+
+.total-keranjang {
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 2px solid #2F6977;
+
+    text-align: right;
+}
+
+.total-keranjang h2 {
+    color: #1C2B42;
+}
+
+#total-harga {
+    color: #FF7B25;
+}
+
+.checkout {
+    padding: 12px 25px;
+
+    background-color: #000000;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.checkout:hover {
+    background-color: #333333;
+}
+
+.keranjang-kosong {
+    padding: 40px;
+    text-align: center;
+
+    color: #777;
+}

@@ -64,4 +64,76 @@ function hapuskeranjang(index) {
     alert(namaproduk + " berhasil dihapus");
 }
 
+function tampilkanisi() {
+    let isi = document.getElementById("isi-keranjang");
+    let totalharga = document.getElementById("total-harga")
+
+    if (!isi) {
+        return;
+    }
+
+    if (keranjang.length == 0) {
+        isi.innerHTML = `
+            <div class="keranjang-kosong">
+                <i class="bi bi-cart-x"></i>
+                <h2>Keranjang masih kosong</h2>
+                <p>Silakan pilih produk terlebih dahulu.</p>
+            </div>
+        `;
+
+        totalharga.textContent = "Rp 0";
+        return;
+    }
+
+    let total = 0;
+
+    isi.innerHTML = "";
+
+    keranjang.forEach(function(produk, index) {
+
+        total += produk.harga;
+
+        isi.innerHTML += `
+            <div class="item-keranjang">
+
+                <div class="item-info">
+                    <h3>${produk.nama}</h3>
+
+                    <p>
+                        Rp ${produk.harga.toLocaleString("id-ID")}
+                    </p>
+                </div>
+
+                <button
+                    class="hapus-produk"
+                    onclick="hapuskeranjangWeb(${index})">
+
+                    <i class="bi bi-trash-fill"></i>
+                    Hapus
+
+                </button>
+
+            </div>
+        `;
+    });
+
+    totalharga.textContent =
+        "Rp " + total.toLocaleString("id-ID");
+}
+
+function hapuskeranjangWeb(index) {
+
+    keranjang.splice(index, 1);
+
+    localStorage.setItem(
+        "keranjang",
+        JSON.stringify(keranjang)
+    );
+
+    updatekeranjang();
+
+    tampilkanIsi();
+}
+
 updatekeranjang();
+tampilkanisi();
