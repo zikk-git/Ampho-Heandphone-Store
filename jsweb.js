@@ -153,5 +153,28 @@ function checkout() {
     alert("Checkout berhasil!");
 }
 
+function cariproduk() {
+    let input = document.getElementById("search-input");
+
+    let katakunci = input.value.toLowerCase();
+
+    let produk = document.querySelectorAll(".card-produk");
+
+    produk.forEach(function(item) {
+
+        let namaproduk = item
+            .querySelector("h4")
+            .textContent
+            .toLowerCase();
+
+        if (namaproduk.includes(katakunci)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+}
+
 updatekeranjang();
 tampilkanisi();
