@@ -339,3 +339,50 @@ nav a:hover {
     color: #FFD25A;
     font-size: 20px;
 }
+
+/* FOOTER */
+
+.footer{
+    margin-top:30px;
+    padding:25px 40px 15px;
+    background-color:#172B3D;
+    color:white;
+    border-top:2px solid #3BA6A0;
+}
+
+/* KONTAK */
+
+.footer-kontak{
+    text-align:center;
+}
+
+.footer-kontak h3{
+    margin:0 0 15px;
+    color:white;
+}
+
+.footer-kontak p{
+    margin:8px 0;
+    color:white;
+}
+
+.footer-kontak i{
+    margin-right:6px;
+    color:#FFD45C;
+}
+
+/* HAK CIPTA */
+
+.footer-hakcipta{
+    margin-top:20px;
+    padding-top:15px;
+    text-align:center;
+    border-top:1px solid #3BA6A0;
+}
+
+.footer-hakcipta p{
+    margin:0;
+    color:#D5DDE5;
+    font-size:14px;
+}
+
