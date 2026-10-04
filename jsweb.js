@@ -34,7 +34,34 @@ function tampilkanKeranjang() {
         " - Rp " + produk.harga.toLocaleString("id-ID") + "\n";
     });
 
-    alert(isi);
+    isi += "\nketk nomor barang yang ingin di hapus: ";
+    isi += "\nketik 0 jika tidak ingin menghapus: ";
+
+    let pilih = prompt(isi);
+
+    if (pilih === null || pilih == 0) {
+        return;
+    }
+
+    let index = parseInt(pilih) - 1;
+
+    if (index >= 0 && index < keranjang.length) {
+        hapuskeranjang(index);
+    } else {
+        alert("nomor barang tidak ada!");
+    }
+}
+
+function hapuskeranjang(index) {
+    let namaproduk = keranjang[index].nama;
+
+    keranjang.splice(index, 1);
+
+    localStorage.setItem("keranjang", JSON.stringify(keranjang));
+
+    updatekeranjang();
+
+    alert(namaproduk + " berhasil dihapus");
 }
 
 updatekeranjang();
