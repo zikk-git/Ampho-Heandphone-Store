@@ -132,7 +132,25 @@ function hapuskeranjangWeb(index) {
 
     updatekeranjang();
 
-    tampilkanIsi();
+    tampilkanisi();
+}
+
+function checkout() {
+
+    if (keranjang.length == 0) {
+        alert("Keranjang masih kosong!");
+        return;
+    }
+
+    keranjang = [];
+
+    localStorage.removeItem("keranjang");
+
+    updatekeranjang();
+
+    tampilkanisi();
+
+    alert("Checkout berhasil!");
 }
 
 updatekeranjang();
