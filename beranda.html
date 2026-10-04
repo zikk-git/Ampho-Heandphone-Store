@@ -1,246 +1,125 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>AMPHO GADGET STORE</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="jsweb.js" defer></script>
 </head>
-
 <body>
+<!-- HEADER -->
+<header class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_LYCmvoCeQ4g2k_4d3fCMcDsklcajqktnI_3msZJjsg&s=10" alt="Header foto">
+    <div class="header-text">
+        <h4>AMPHO HANDPHONE STORE</h4>
+        <p>Jual Handphone Murah dan Original</p>
+    </div>
+</header>
 
-    <!-- Header -->
-    <header class="header">
-        <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_LYCmvoCeQ4g2k_4d3fCMcDsklcajqktnI_3msZJjsg&s=10"
-            alt="Header foto">
-
-        <div class="header-text">
-            <h4>AMPHO HANDPHONE STORE</h4>
-            <p>Jual Handphone Murah dan Original</p>
+<!-- NAVIGASI -->
+<nav>
+    <ul>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Cari produk..." onkeyup="cariproduk()">
+            <button onclick="cariproduk()">
+                <i class="bi bi-search"></i>
+            </button>
         </div>
-    </header>
-
-
-    <!-- Navigasi -->
-    <nav>
-        <ul>
-
-            <!-- Search -->
-            <div class="search-bar">
-
-                <input
-                    type="text"
-                    id="search-input"
-                    placeholder="Cari produk..."
-                    onkeyup="cariproduk()">
-
-                <button onclick="cariproduk()">
-                    <i class="bi bi-search"></i>
-                </button>
-
-            </div>
-
-
-            <!-- Beranda -->
-            <a href="beranda.html">
-                <i class="bi bi-house-fill"></i>
-                Beranda
+        <a href="beranda.html">
+            <i class="bi bi-house-fill"></i>
+            Beranda
+        </a>
+        <a href="#">
+            <i class="bi bi-grid-fill"></i>
+            Produk
+        </a>
+        <li>
+            <a href="keranjang.html">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang (<span id="jumlah-keranjang">0</span>)
             </a>
+        </li>
+    </ul>
+</nav>
 
-
-            <!-- Produk -->
-            <a href="#">
-                <i class="bi bi-grid-fill"></i>
-                Produk
-            </a>
-
-
-            <!-- Keranjang -->
-            <li>
-                <a href="keranjang.html">
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-                    (<span id="jumlah-keranjang">0</span>)
-                </a>
-            </li>
-
-        </ul>
-    </nav>
-
-
-    <!-- Daftar Produk -->
-    <div class="container">
-
-
-        <!-- Nubia Redmagic 11 Pro -->
-        <div class="card-produk">
-
-            <a href="redmagic.html" class="produk-deskripsi">
-
-                <img
-                    src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mg5vrq1ygc956d"
-                    alt="Nubia Redmagic 11 Pro">
-
-                <h4>Nubia Redmagic 11 Pro</h4>
-
-                <p>Rp 22.380.000</p>
-
-            </a>
-
-            <h2>
-                <button
-                    class="keranjang"
-                    onclick="tambahKeranjang(
-                        'Nubia Redmagic 11 Pro',
-                        22380000
-                    )">
-
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-
-                </button>
-            </h2>
-
-        </div>
-
-
-        <!-- iPhone 11 Pro Max -->
-        <div class="card-produk">
-
-            <a href="iphone.html" class="produk-deskripsi">
-
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHQ3D8-veOlMj2E8KenLX9zy-Z5gz5XCFuSKKfS3EQ&s=10"
-                    alt="iPhone 11 Pro Max">
-
-                <h4>iPhone 11 Pro Max</h4>
-
-                <p>Rp 24.999.000</p>
-
-            </a>
-
-            <h2>
-                <button
-                    class="keranjang"
-                    onclick="tambahKeranjang(
-                        'iPhone 11 Pro Max',
-                        24999000
-                    )">
-
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-
-                </button>
-            </h2>
-
-        </div>
-
-
-        <!-- Samsung Galaxy S26 Ultra -->
-        <div class="card-produk">
-
-            <a href="samsung.html" class="produk-deskripsi">
-
-                <img
-                    src="https://down-id.img.susercontent.com/file/id-11134207-822wj-mlbj4kbj13pcf0"
-                    alt="Samsung Galaxy S26 Ultra">
-
-                <h4>Samsung Galaxy S26 Ultra</h4>
-
-                <p>Rp 25.499.000</p>
-
-            </a>
-
-            <h2>
-                <button
-                    class="keranjang"
-                    onclick="tambahKeranjang(
-                        'Samsung Galaxy S26 Ultra',
-                        25499000
-                    )">
-
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-
-                </button>
-            </h2>
-
-        </div>
-
-
-        <!-- Xiaomi 17 Ultra -->
-        <div class="card-produk">
-
-            <a href="xiaomi.html" class="produk-deskripsi">
-
-                <img
-                    src="https://down-id.img.susercontent.com/file/id-11134207-82250-mj3jmyhkjj7kac"
-                    alt="Xiaomi 17 Ultra">
-
-                <h4>Xiaomi 17 Ultra</h4>
-
-                <p>Rp 19.999.000</p>
-
-            </a>
-
-            <h2>
-                <button
-                    class="keranjang"
-                    onclick="tambahKeranjang(
-                        'Xiaomi 17 Ultra',
-                        19999000
-                    )">
-
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-
-                </button>
-            </h2>
-
-        </div>
-
-
-        <!-- Oppo Find X9 Ultra -->
-        <div class="card-produk">
-
-            <a href="oppo.html" class="produk-deskripsi">
-
-                <img
-                    src="https://cdnpro.eraspace.com/media/catalog/product/o/p/oppo_find_x9_ultra_canyon_orange_1_2.webp"
-                    alt="Oppo Find X9 Ultra">
-
-                <h4>Oppo Find X9 Ultra</h4>
-
-                <p>Rp 27.999.000</p>
-
-            </a>
-
-            <h2>
-                <button
-                    class="keranjang"
-                    onclick="tambahKeranjang(
-                        'Oppo Find X9 Ultra',
-                        27999000
-                    )">
-
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-
-                </button>
-            </h2>
-
-        </div>
-
+<!-- DAFTAR PRODUK -->
+<div class="container">
+    <!-- NUBIA REDMAGIC -->
+    <div class="card-produk">
+        <a href="redmagic.html" class="produk-deskripsi">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mg5vrq1ygc956d" alt="Nubia Redmagic 11 Pro">
+            <h4>Nubia Redmagic 11 Pro</h4>
+            <p>Rp 22.380.000</p>
+        </a>
+        <h2>
+            <button class="keranjang" onclick="tambahKeranjang('Nubia Redmagic 11 Pro', 22380000)">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+            </button>
+        </h2>
     </div>
 
-</body>
+    <!-- IPHONE -->
+    <div class="card-produk">
+        <a href="iphone.html" class="produk-deskripsi">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHQ3D8-veOlMj2E8KenLX9zy-Z5gz5XCFuSKKfS3EQ&s=10" alt="iPhone 11 Pro Max">
+            <h4>iPhone 11 Pro Max</h4>
+            <p>Rp 24.999.000</p>
+        </a>
+        <h2>
+            <button class="keranjang" onclick="tambahKeranjang('iPhone 11 Pro Max', 24999000)">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+            </button>
+        </h2>
+    </div>
 
+    <!-- SAMSUNG -->
+    <div class="card-produk">
+        <a href="samsung.html" class="produk-deskripsi">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-822wj-mlbj4kbj13pcf0" alt="Samsung Galaxy S26 Ultra">
+            <h4>Samsung Galaxy S26 Ultra</h4>
+            <p>Rp 25.499.000</p>
+        </a>
+        <h2>
+            <button class="keranjang" onclick="tambahKeranjang('Samsung Galaxy S26 Ultra', 25499000)">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+            </button>
+        </h2>
+    </div>
+
+    <!-- XIAOMI -->
+    <div class="card-produk">
+        <a href="xiaomi.html" class="produk-deskripsi">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-82250-mj3jmyhkjj7kac" alt="Xiaomi 17 Ultra">
+            <h4>Xiaomi 17 Ultra</h4>
+            <p>Rp 19.999.000</p>
+        </a>
+        <h2>
+            <button class="keranjang" onclick="tambahKeranjang('Xiaomi 17 Ultra', 19999000)">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+            </button>
+        </h2>
+    </div>
+
+    <!-- OPPO -->
+    <div class="card-produk">
+        <a href="oppo.html" class="produk-deskripsi">
+            <img src="https://cdnpro.eraspace.com/media/catalog/product/o/p/oppo_find_x9_ultra_canyon_orange_1_2.webp" alt="Oppo Find X9 Ultra">
+            <h4>Oppo Find X9 Ultra</h4>
+            <p>Rp 27.999.000</p>
+        </a>
+        <h2>
+            <button class="keranjang" onclick="tambahKeranjang('Oppo Find X9 Ultra', 27999000)">
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+            </button>
+        </h2>
+    </div>
+</div>
+</body>
 </html>
