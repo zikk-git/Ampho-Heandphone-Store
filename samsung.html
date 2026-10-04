@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AMPHO GADGET STORE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="jsweb.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+
+                <button>
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+
+            <a href="beranda.html">
+                <i class="bi bi-house-fill"></i> Beranda
+            </a>
+
+            <a href="#">
+                <i class="bi bi-grid-fill"></i> Produk
+            </a>
+
+            <li>
+                <a href="#" onclick="tampilkanKeranjang()">
+                    <i class="bi bi-cart-fill"></i>
+                    Keranjang (<span id="jumlah-keranjang">0</span>)
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <div class="container-detail">
+
+        <div class="card-detail-img">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpvZHMHZ8yPGQKiNS0JYCRhI7ssRGxk2QpL3BoDFKpg&s=10"
+                alt="Samsung Galaxy S26 Ultra">
+
+        </div>
+
+
+        <div class="card-detail-text">
+
+            <h2>Samsung Galaxy S26 Ultra</h2>
+
+            <p>Rp 25.499.000</p>
+
+            <h4>
+                Samsung Galaxy S26 Ultra merupakan smartphone
+                flagship dengan performa tinggi dan kamera berkualitas.
+            </h4>
+
+            <h4>
+                Cocok untuk gaming, fotografi, produktivitas,
+                dan penggunaan sehari-hari.
+            </h4>
+
+            <h3>Spek:</h3>
+
+            <ul>
+                <li>Layar: 6,9" Dynamic AMOLED 2X</li>
+                <li>Refresh Rate: 120Hz</li>
+                <li>Chipset: Snapdragon</li>
+                <li>RAM: 12GB</li>
+                <li>Penyimpanan: 256GB / 512GB / 1TB</li>
+                <li>Kamera: 200MP + 50MP + 50MP + 10MP</li>
+                <li>Kamera depan: 12MP</li>
+                <li>Baterai: 5.000mAh</li>
+                <li>Jaringan: 5G</li>
+                <li>Fitur: S Pen</li>
+            </ul>
+
+            <button class="keranjang"
+                onclick="tambahKeranjang('Samsung Galaxy S26 Ultra', 25499000)">
+
+                <i class="bi bi-cart-fill"></i>
+                Keranjang
+
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
