@@ -1,4 +1,12 @@
-let keranjang = [];
+let keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+
+function updatekeranjang() {
+    let jumlah = document.getElementById("jumlah-keranjang");
+
+    if (jumlah) {
+        jumlah.textContent = keranjang.length;
+    }
+}
 
 function tambahKeranjang(nama, harga) {
     keranjang.push({
@@ -6,7 +14,9 @@ function tambahKeranjang(nama, harga) {
         harga: harga
     });
 
-    document.getElementById("jumlah-keranjang").textContent = keranjang.length;
+    localStorage.setItem("keranjang", JSON.stringify(keranjang));
+
+    updatekeranjang();
 
     alert(nama + " ditambahkan ke keranjang!");
 }
@@ -26,3 +36,5 @@ function tampilkanKeranjang() {
 
     alert(isi);
 }
+
+updatekeranjang();
