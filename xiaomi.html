@@ -2,141 +2,123 @@
 <html lang="id">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AMPHO GADGET STORE</title>
 
-    <title>AMPHO GADGET STORE</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <script src="jsweb.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="jsweb.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigasi -->
-    <nav>
-        <ul>
+	<!-- Navigasi -->
+	<nav>
+		<ul>
 
-            <!-- Tombol Kembali -->
-            <a href="#" onclick="history.back(); return false;" class="tombol-kembali">
-                <i class="bi bi-arrow-left"></i>
-            </a>
+			<!-- Tombol Kembali -->
+			<a href="#" onclick="history.back(); return false;" class="tombol-kembali">
+				<i class="bi bi-arrow-left"></i>
+			</a>
 
-            <!-- Search -->
-            <div class="search-bar">
-                <input
-                    type="text"
-                    placeholder="Cari produk...">
+			<!-- Search -->
+			<div class="search-bar">
+				<input type="text" placeholder="Cari produk...">
 
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
+				<button>
+					<i class="bi bi-search"></i>
+				</button>
+			</div>
 
-            <!-- Beranda -->
-            <a href="beranda.html">
-                <i class="bi bi-house-fill"></i>
-                Beranda
-            </a>
+			<!-- Beranda -->
+			<a href="beranda.html">
+				<i class="bi bi-house-fill"></i>
+				Beranda
+			</a>
 
-            <!-- Produk -->
-            <a href="#">
-                <i class="bi bi-grid-fill"></i>
-                Produk
-            </a>
+			<!-- Produk -->
+			<a href="#">
+				<i class="bi bi-grid-fill"></i>
+				Produk
+			</a>
 
-            <!-- Keranjang -->
-            <li>
-                <a href="keranjang.html">
-                    <i class="bi bi-cart-fill"></i>
-                    Keranjang
-                    (<span id="jumlah-keranjang">0</span>)
-                </a>
-            </li>
+			<!-- Keranjang -->
+			<li>
+				<a href="keranjang.html">
+					<i class="bi bi-cart-fill"></i>
+					Keranjang
+					(<span id="jumlah-keranjang">0</span>)
+				</a>
+			</li>
 
-        </ul>
-    </nav>
+		</ul>
+	</nav>
 
+	<!-- Detail Produk -->
+	<div class="container-detail">
 
-    <!-- Detail Produk -->
-    <div class="container-detail">
+		<!-- Gambar Produk -->
+		<div class="card-detail-img">
+			<img src="https://down-id.img.susercontent.com/file/id-11134207-82250-mj3jmyhkjj7kac" alt="Xiaomi 17 Ultra">
+		</div>
 
-        <!-- Gambar Produk -->
-        <div class="card-detail-img">
+		<!-- Informasi Produk -->
+		<div class="card-detail-text">
+			<h2>Xiaomi 17 Ultra</h2>
 
-            <img
-                src="https://down-id.img.susercontent.com/file/id-11134207-82250-mj3jmyhkjj7kac"
-                alt="Xiaomi 17 Ultra">
+			<p>Rp 19.999.000</p>
 
-        </div>
+			<!-- Deskripsi -->
+			<h4>
+				Xiaomi 17 Ultra merupakan smartphone flagship
+				dengan performa tinggi dan kemampuan fotografi.
+			</h4>
 
+			<h4>
+				Cocok untuk gaming, fotografi, video,
+				multimedia, dan penggunaan sehari-hari.
+			</h4>
 
-        <!-- Informasi Produk -->
-        <div class="card-detail-text">
+			<!-- Spesifikasi -->
+			<h3>Spek:</h3>
 
-            <h2>Xiaomi 17 Ultra</h2>
+			<ul>
+				<li>Layar: AMOLED, 120Hz</li>
+				<li>Chipset: Snapdragon 8 Elite Gen 5</li>
+				<li>RAM: 16GB</li>
+				<li>Penyimpanan: 512GB / 1TB</li>
+				<li>Kamera: Leica</li>
+				<li>Kamera depan: 50MP</li>
+				<li>Baterai: 6.000mAh</li>
+				<li>Charging: 90W</li>
+				<li>Jaringan: 5G</li>
+				<li>OS: Android</li>
+			</ul>
 
-            <p>Rp 19.999.000</p>
+			<!-- Tombol Keranjang -->
+			<button class="keranjang" onclick="tambahKeranjang('Xiaomi 17 Ultra', 19999000)">
+				<i class="bi bi-cart-fill"></i>
+				Keranjang
+			</button>
 
-            <h4>
-                Xiaomi 17 Ultra merupakan smartphone flagship
-                dengan performa tinggi dan kemampuan fotografi.
-            </h4>
+		</div>
+	</div>
 
-            <h4>
-                Cocok untuk gaming, fotografi, video,
-                multimedia, dan penggunaan sehari-hari.
-            </h4>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-kontak">
+			<h3>Kontak</h3>
+			<p><i class="bi bi-telephone-fill"></i> 082252211270</p>
+			<p><i class="bi bi-envelope-fill"></i> alzikri986@gmail.com</p>
+			<p><i class="bi bi-geo-alt-fill"></i> Banjarmasin, Kalimantan Selatan</p>
+		</div>
 
-
-            <!-- Spesifikasi -->
-            <h3>Spek:</h3>
-
-            <ul>
-                <li>Layar: AMOLED, 120Hz</li>
-                <li>Chipset: Snapdragon 8 Elite Gen 5</li>
-                <li>RAM: 16GB</li>
-                <li>Penyimpanan: 512GB / 1TB</li>
-                <li>Kamera: Leica</li>
-                <li>Kamera depan: 50MP</li>
-                <li>Baterai: 6.000mAh</li>
-                <li>Charging: 90W</li>
-                <li>Jaringan: 5G</li>
-                <li>OS: Android</li>
-            </ul>
-
-
-            <!-- Tombol Keranjang -->
-            <button
-                class="keranjang"
-                onclick="tambahKeranjang('Xiaomi 17 Ultra', 19999000)">
-
-                <i class="bi bi-cart-fill"></i>
-                Keranjang
-
-            </button>
-
-        </div>
-
-    </div>
+		<div class="footer-hakcipta">
+			<p>&copy; 2026 AMPHO HANDPHONE STORE. Semua Hak Dilindungi.</p>
+		</div>
+	</footer>
 
 </body>
-
-<footer class="footer">
-    <div class="footer-kontak">
-        <h3>Kontak</h3>
-        <p><i class="bi bi-telephone-fill"></i> 082252211270</p>
-        <p><i class="bi bi-envelope-fill"></i> alzikri986@gmail.com</p>
-        <p><i class="bi bi-geo-alt-fill"></i> Banjarmasin, Kalimantan Selatan</p>
-    </div>
-
-    <div class="footer-hakcipta">
-        <p>&copy; 2026 AMPHO HANDPHONE STORE. Semua Hak Dilindungi.</p>
-    </div>
-</footer>
 
 </html>

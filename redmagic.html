@@ -2,183 +2,124 @@
 <html lang="id">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AMPHO GADGET STORE</title>
 
-    <title>AMPHO GADGET STORE</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <script src="jsweb.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="jsweb.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigasi -->
-    <nav>
-        <ul>
+	<!-- Navigasi -->
+	<nav>
+		<ul>
 
-            <!-- Tombol Kembali -->
-            <a href="#"
-                onclick="history.back(); return false;"
-                class="tombol-kembali">
+			<!-- Tombol Kembali -->
+			<a href="#" onclick="history.back(); return false;" class="tombol-kembali">
+				<i class="bi bi-arrow-left"></i>
+			</a>
 
-                <i class="bi bi-arrow-left"></i>
+			<!-- Search -->
+			<div class="search-bar">
+				<input type="text" placeholder="Cari produk...">
 
-            </a>
+				<button>
+					<i class="bi bi-search"></i>
+				</button>
+			</div>
 
+			<!-- Beranda -->
+			<a href="beranda.html">
+				<i class="bi bi-house-fill"></i>
+				Beranda
+			</a>
 
-            <!-- Search -->
-            <div class="search-bar">
+			<!-- Produk -->
+			<a href="#">
+				<i class="bi bi-grid-fill"></i>
+				Produk
+			</a>
 
-                <input
-                    type="text"
-                    placeholder="Cari produk...">
+			<!-- Keranjang -->
+			<li>
+				<a href="keranjang.html">
+					<i class="bi bi-cart-fill"></i>
+					Keranjang (<span id="jumlah-keranjang">0</span>)
+				</a>
+			</li>
 
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
+		</ul>
+	</nav>
 
-            </div>
+	<!-- Detail Produk -->
+	<div class="container-detail">
 
+		<!-- Gambar Produk -->
+		<div class="card-detail-img">
+			<img src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mg5vrq1ygc956d" alt="Nubia Redmagic 11 Pro">
+		</div>
 
-            <!-- Beranda -->
-            <a href="beranda.html">
+		<!-- Informasi Produk -->
+		<div class="card-detail-text">
+			<h2>Nubia Redmagic 11 Pro</h2>
 
-                <i class="bi bi-house-fill"></i>
-                Beranda
+			<p>Rp 24.999.000</p>
 
-            </a>
+			<!-- Deskripsi -->
+			<h4>
+				Nubia Redmagic 11 Pro merupakan smartphone gaming
+				dengan performa tinggi yang dirancang untuk kebutuhan
+				gaming dan penggunaan sehari-hari.
+			</h4>
 
+			<h4>
+				Cocok untuk pengguna yang membutuhkan performa tinggi,
+				layar berkualitas, dan pengalaman bermain game yang nyaman.
+			</h4>
 
-            <!-- Produk -->
-            <a href="#">
+			<!-- Spesifikasi -->
+			<h3>Spek:</h3>
 
-                <i class="bi bi-grid-fill"></i>
-                Produk
+			<ul>
+				<li>Layar: 6,85" AMOLED, 144Hz</li>
+				<li>Chipset: Snapdragon 8 Elite Gen 5</li>
+				<li>RAM: 12GB / 16GB / 24GB</li>
+				<li>Penyimpanan: 256GB / 512GB / 1TB</li>
+				<li>Kamera: 50MP + 50MP + 2MP</li>
+				<li>Kamera depan: 16MP</li>
+				<li>Baterai: 7.500mAh</li>
+				<li>Charging: 80W</li>
+				<li>OS: Android 16 + REDMAGIC OS 11</li>
+				<li>Jaringan: 5G</li>
+				<li>Fitur gaming: Cooling System + Shoulder Trigger 520Hz</li>
+			</ul>
 
-            </a>
+			<!-- Tombol Keranjang -->
+			<button class="keranjang" onclick="tambahKeranjang('Nubia Redmagic 11 Pro', 22380000)">
+				<i class="bi bi-cart-fill"></i>
+				Keranjang
+			</button>
 
+		</div>
+	</div>
 
-            <!-- Keranjang -->
-            <li>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-kontak">
+			<h3>Kontak</h3>
+			<p><i class="bi bi-telephone-fill"></i> 082252211270</p>
+			<p><i class="bi bi-envelope-fill"></i> alzikri986@gmail.com</p>
+			<p><i class="bi bi-geo-alt-fill"></i> Banjarmasin, Kalimantan Selatan</p>
+		</div>
 
-                <a href="keranjang.html">
-
-                    <i class="bi bi-cart-fill"></i>
-
-                    Keranjang
-                    (<span id="jumlah-keranjang">0</span>)
-
-                </a>
-
-            </li>
-
-        </ul>
-    </nav>
-
-
-    <!-- Detail Produk -->
-    <div class="container-detail">
-
-
-        <!-- Gambar Produk -->
-        <div class="card-detail-img">
-
-            <img
-                src="https://down-id.img.susercontent.com/file/id-11134207-8224o-mg5vrq1ygc956d"
-                alt="Nubia Redmagic 11 Pro">
-
-        </div>
-
-
-        <!-- Informasi Produk -->
-        <div class="card-detail-text">
-
-            <h2>Nubia Redmagic 11 Pro</h2>
-
-            <p>Rp 24.999.000</p>
-
-
-            <!-- Deskripsi -->
-            <h4>
-                Nubia Redmagic 11 Pro merupakan smartphone gaming
-                dengan performa tinggi yang dirancang untuk kebutuhan
-                gaming dan penggunaan sehari-hari.
-            </h4>
-
-            <h4>
-                Cocok untuk pengguna yang membutuhkan performa tinggi,
-                layar berkualitas, dan pengalaman bermain game yang nyaman.
-            </h4>
-
-
-            <!-- Spesifikasi -->
-            <h3>Spek:</h3>
-
-            <ul>
-
-                <li>Layar: 6,85" AMOLED, 144Hz</li>
-
-                <li>Chipset: Snapdragon 8 Elite Gen 5</li>
-
-                <li>RAM: 12GB / 16GB / 24GB</li>
-
-                <li>Penyimpanan: 256GB / 512GB / 1TB</li>
-
-                <li>Kamera: 50MP + 50MP + 2MP</li>
-
-                <li>Kamera depan: 16MP</li>
-
-                <li>Baterai: 7.500mAh</li>
-
-                <li>Charging: 80W</li>
-
-                <li>OS: Android 16 + REDMAGIC OS 11</li>
-
-                <li>Jaringan: 5G</li>
-
-                <li>
-                    Fitur gaming:
-                    Cooling System + Shoulder Trigger 520Hz
-                </li>
-
-            </ul>
-
-
-            <!-- Tombol Keranjang -->
-            <button
-                class="keranjang"
-                onclick="tambahKeranjang(
-                    'Nubia Redmagic 11 Pro',
-                    22380000
-                )">
-
-                <i class="bi bi-cart-fill"></i>
-                Keranjang
-
-            </button>
-
-        </div>
-
-    </div>
+		<div class="footer-hakcipta">
+			<p>&copy; 2026 AMPHO HANDPHONE STORE. Semua Hak Dilindungi.</p>
+		</div>
+	</footer>
 
 </body>
-
-<footer class="footer">
-    <div class="footer-kontak">
-        <h3>Kontak</h3>
-        <p><i class="bi bi-telephone-fill"></i> 082252211270</p>
-        <p><i class="bi bi-envelope-fill"></i> alzikri986@gmail.com</p>
-        <p><i class="bi bi-geo-alt-fill"></i> Banjarmasin, Kalimantan Selatan</p>
-    </div>
-
-    <div class="footer-hakcipta">
-        <p>&copy; 2026 AMPHO HANDPHONE STORE. Semua Hak Dilindungi.</p>
-    </div>
-</footer>
 
 </html>
