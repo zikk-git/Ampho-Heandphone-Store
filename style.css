@@ -221,12 +221,13 @@ nav a:hover {
 .keranjang {
     display: inline-block;
 
-    padding: 10px 20px;
+    padding: 13px 30px;
     margin: 10px auto;
 
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
 
     background-color: #F47B35;
 
@@ -376,9 +377,11 @@ nav a:hover {
 /* TOMBOL HAPUS */
 
 .hapus-produk {
-    padding: 8px 12px;
+    padding: 11px 20px;
 
     color: white;
+    font-size: 15px;
+    font-weight: bold;
 
     background-color: #F47B35;
 
@@ -412,4 +415,26 @@ nav a:hover {
 
 .total-keranjang span {
     color: #D99B00;
+}
+
+/* CHECKOUT */
+.checkout {
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #F47B35;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #FF9A4D;
 }
