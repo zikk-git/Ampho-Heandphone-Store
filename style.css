@@ -1,0 +1,27 @@
+.card-produk {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #8c8c8c;
+    background-color: whitesmoke;
+    text-align: center;
+    transition: 0.3s;
+}
+ 
+.card-produk:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(123, 44, 123, 0.25);
+}
+ 
+/* Gambar */
+ 
+.card-produk img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border: 3px solid red;
+    border-radius: 10px;
+}
