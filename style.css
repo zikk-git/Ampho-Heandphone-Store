@@ -558,6 +558,39 @@ nav a:hover {
         font-size: 14px;
     }
 
+    /* IKLAN */
+
+    .iklan {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+
+        margin: 10px 5px;
+        padding: 15px;
+    }
+
+    .iklan-img {
+        order: -1;
+        width: 100%;
+        height: auto;
+    }
+
+    .iklan-img img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .iklan-text h2 {
+        font-size: 24px;
+    }
+
+    .tombol-iklan {
+        display: block;
+        text-align: center;
+    }
 
     /* SEARCH */
 
