@@ -33,8 +33,9 @@
             <a href="#">
                 <i class="bi bi-grid-fill"></i> Produk
             </a>
-            <a href="#">
-                <i class="bi bi-cart-fill"></i> Keranjang
+            <a href="#" onclick="tampilkanKeranjang()">
+                <i class="bi bi-cart-fill"></i> 
+                Keranjang (<span id="jumlah-keranjang">0</span>)
             </a>
         </ul>
       </nav>
@@ -44,10 +45,10 @@
             <h4>Nubia Redmagic 11 Pro</h4>
             <p>Rp 22.380.000</p>
             <h2>
-                <div class="keranjang">
+                <button class="keranjang" onclick="tambahKeranjang('Nubia Redmagic 11 Pro', 22380000)">
                     <i class="bi bi-cart-fill"></i>
                     Keranjang
-                </div>
+                </button>
             </h2>
         </div>
 
