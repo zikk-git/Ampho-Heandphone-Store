@@ -17,54 +17,93 @@
 
 <body>
 
+    <!-- Navigasi -->
     <nav>
         <ul>
-            <a href="#" onclick="history.back(); return false;" class="tombol-kembali">
+
+            <!-- Tombol Kembali -->
+            <a href="#"
+                onclick="history.back(); return false;"
+                class="tombol-kembali">
+
                 <i class="bi bi-arrow-left"></i>
+
             </a>
+
+
+            <!-- Search -->
             <div class="search-bar">
-                <input type="text" placeholder="Cari produk...">
+
+                <input
+                    type="text"
+                    placeholder="Cari produk...">
 
                 <button>
                     <i class="bi bi-search"></i>
                 </button>
+
             </div>
 
+
+            <!-- Beranda -->
             <a href="beranda.html">
-                <i class="bi bi-house-fill"></i> Beranda
+
+                <i class="bi bi-house-fill"></i>
+                Beranda
+
             </a>
 
+
+            <!-- Produk -->
             <a href="#">
-                <i class="bi bi-grid-fill"></i> Produk
+
+                <i class="bi bi-grid-fill"></i>
+                Produk
+
             </a>
 
+
+            <!-- Keranjang -->
             <li>
+
                 <a href="keranjang.html">
+
                     <i class="bi bi-cart-fill"></i>
-                    Keranjang (<span id="jumlah-keranjang">0</span>)
+
+                    Keranjang
+                    (<span id="jumlah-keranjang">0</span>)
+
                 </a>
+
             </li>
 
         </ul>
     </nav>
 
 
+    <!-- Detail Produk -->
     <div class="container-detail">
 
+
+        <!-- Gambar Produk -->
         <div class="card-detail-img">
 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHQ3D8-veOlMj2E8KenLX9zy-Z5gz5XCFuSKKfS3EQ&s=10"
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHQ3D8-veOlMj2E8KenLX9zy-Z5gz5XCFuSKKfS3EQ&s=10"
                 alt="iPhone 11 Pro Max">
 
         </div>
 
 
+        <!-- Informasi Produk -->
         <div class="card-detail-text">
 
             <h2>iPhone 11 Pro Max</h2>
 
             <p>Rp 24.999.000</p>
 
+
+            <!-- Deskripsi -->
             <h4>
                 iPhone 11 Pro Max merupakan smartphone dari Apple
                 dengan performa tinggi dan kamera berkualitas.
@@ -75,32 +114,16 @@
                 video, gaming, dan multimedia.
             </h4>
 
+
+            <!-- Spesifikasi -->
             <h3>Spek:</h3>
 
             <ul>
+
                 <li>Layar: 6,5" Super Retina XDR OLED</li>
+
                 <li>Chipset: Apple A13 Bionic</li>
+
                 <li>RAM: 4GB</li>
+
                 <li>Penyimpanan: 64GB / 256GB / 512GB</li>
-                <li>Kamera: 12MP + 12MP + 12MP</li>
-                <li>Kamera depan: 12MP</li>
-                <li>Baterai: 3.969mAh</li>
-                <li>Jaringan: 4G LTE</li>
-                <li>OS: iOS</li>
-            </ul>
-
-            <button class="keranjang"
-                onclick="tambahKeranjang('iPhone 11 Pro Max', 24999000)">
-
-                <i class="bi bi-cart-fill"></i>
-                Keranjang
-
-            </button>
-
-        </div>
-
-    </div>
-
-</body>
-
-</html>

@@ -17,54 +17,93 @@
 
 <body>
 
+    <!-- Navigasi -->
     <nav>
         <ul>
-            <a href="#" onclick="history.back(); return false;" class="tombol-kembali">
+
+            <!-- Tombol Kembali -->
+            <a href="#"
+                onclick="history.back(); return false;"
+                class="tombol-kembali">
+
                 <i class="bi bi-arrow-left"></i>
+
             </a>
+
+
+            <!-- Search -->
             <div class="search-bar">
-                <input type="text" placeholder="Cari produk...">
+
+                <input
+                    type="text"
+                    placeholder="Cari produk...">
 
                 <button>
                     <i class="bi bi-search"></i>
                 </button>
+
             </div>
 
+
+            <!-- Beranda -->
             <a href="beranda.html">
-                <i class="bi bi-house-fill"></i> Beranda
+
+                <i class="bi bi-house-fill"></i>
+                Beranda
+
             </a>
 
+
+            <!-- Produk -->
             <a href="#">
-                <i class="bi bi-grid-fill"></i> Produk
+
+                <i class="bi bi-grid-fill"></i>
+                Produk
+
             </a>
 
+
+            <!-- Keranjang -->
             <li>
+
                 <a href="keranjang.html">
+
                     <i class="bi bi-cart-fill"></i>
-                    Keranjang (<span id="jumlah-keranjang">0</span>)
+
+                    Keranjang
+                    (<span id="jumlah-keranjang">0</span>)
+
                 </a>
+
             </li>
 
         </ul>
     </nav>
 
 
+    <!-- Detail Produk -->
     <div class="container-detail">
 
+
+        <!-- Gambar Produk -->
         <div class="card-detail-img">
 
-            <img src="https://down-id.img.susercontent.com/file/id-11134207-822wj-mlbj4kbj13pcf0"
+            <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-822wj-mlbj4kbj13pcf0"
                 alt="Samsung Galaxy S26 Ultra">
 
         </div>
 
 
+        <!-- Informasi Produk -->
         <div class="card-detail-text">
 
             <h2>Samsung Galaxy S26 Ultra</h2>
 
             <p>Rp 25.499.000</p>
 
+
+            <!-- Deskripsi -->
             <h4>
                 Samsung Galaxy S26 Ultra merupakan smartphone
                 flagship dengan performa tinggi dan kamera berkualitas.
@@ -75,23 +114,42 @@
                 dan penggunaan sehari-hari.
             </h4>
 
+
+            <!-- Spesifikasi -->
             <h3>Spek:</h3>
 
             <ul>
+
                 <li>Layar: 6,9" Dynamic AMOLED 2X</li>
+
                 <li>Refresh Rate: 120Hz</li>
+
                 <li>Chipset: Snapdragon</li>
+
                 <li>RAM: 12GB</li>
+
                 <li>Penyimpanan: 256GB / 512GB / 1TB</li>
+
                 <li>Kamera: 200MP + 50MP + 50MP + 10MP</li>
+
                 <li>Kamera depan: 12MP</li>
+
                 <li>Baterai: 5.000mAh</li>
+
                 <li>Jaringan: 5G</li>
+
                 <li>Fitur: S Pen</li>
+
             </ul>
 
-            <button class="keranjang"
-                onclick="tambahKeranjang('Samsung Galaxy S26 Ultra', 25499000)">
+
+            <!-- Tombol Keranjang -->
+            <button
+                class="keranjang"
+                onclick="tambahKeranjang(
+                    'Samsung Galaxy S26 Ultra',
+                    25499000
+                )">
 
                 <i class="bi bi-cart-fill"></i>
                 Keranjang

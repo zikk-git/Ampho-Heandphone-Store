@@ -17,54 +17,93 @@
 
 <body>
 
+    <!-- Navigasi -->
     <nav>
         <ul>
-            <a href="#" onclick="history.back(); return false;" class="tombol-kembali">
+
+            <!-- Tombol Kembali -->
+            <a href="#"
+                onclick="history.back(); return false;"
+                class="tombol-kembali">
+
                 <i class="bi bi-arrow-left"></i>
+
             </a>
+
+
+            <!-- Search -->
             <div class="search-bar">
-                <input type="text" placeholder="Cari produk...">
+
+                <input
+                    type="text"
+                    placeholder="Cari produk...">
 
                 <button>
                     <i class="bi bi-search"></i>
                 </button>
+
             </div>
 
+
+            <!-- Beranda -->
             <a href="beranda.html">
-                <i class="bi bi-house-fill"></i> Beranda
+
+                <i class="bi bi-house-fill"></i>
+                Beranda
+
             </a>
 
+
+            <!-- Produk -->
             <a href="#">
-                <i class="bi bi-grid-fill"></i> Produk
+
+                <i class="bi bi-grid-fill"></i>
+                Produk
+
             </a>
 
+
+            <!-- Keranjang -->
             <li>
+
                 <a href="keranjang.html">
+
                     <i class="bi bi-cart-fill"></i>
-                    Keranjang (<span id="jumlah-keranjang">0</span>)
+
+                    Keranjang
+                    (<span id="jumlah-keranjang">0</span>)
+
                 </a>
+
             </li>
 
         </ul>
     </nav>
 
 
+    <!-- Detail Produk -->
     <div class="container-detail">
 
+
+        <!-- Gambar Produk -->
         <div class="card-detail-img">
 
-            <img src="https://cdnpro.eraspace.com/media/catalog/product/o/p/oppo_find_x9_ultra_canyon_orange_1_2.webp"
+            <img
+                src="https://cdnpro.eraspace.com/media/catalog/product/o/p/oppo_find_x9_ultra_canyon_orange_1_2.webp"
                 alt="Oppo Find X9 Ultra">
 
         </div>
 
 
+        <!-- Informasi Produk -->
         <div class="card-detail-text">
 
             <h2>Oppo Find X9 Ultra</h2>
 
             <p>Rp 27.999.000</p>
 
+
+            <!-- Deskripsi -->
             <h4>
                 OPPO Find X9 Ultra merupakan smartphone flagship
                 dengan performa tinggi dan kemampuan fotografi.
@@ -75,23 +114,42 @@
                 multimedia, dan penggunaan sehari-hari.
             </h4>
 
+
+            <!-- Spesifikasi -->
             <h3>Spek:</h3>
 
             <ul>
+
                 <li>Layar: AMOLED</li>
+
                 <li>Refresh Rate: 120Hz</li>
+
                 <li>Chipset: Snapdragon 8 Elite Gen 5</li>
+
                 <li>RAM: 12GB / 16GB</li>
+
                 <li>Penyimpanan: 512GB / 1TB</li>
+
                 <li>Kamera: 200MP + 200MP + 50MP + 50MP</li>
+
                 <li>Kamera depan: 50MP</li>
+
                 <li>Baterai: 7.050mAh</li>
+
                 <li>Charging: 100W</li>
+
                 <li>Jaringan: 5G</li>
+
             </ul>
 
-            <button class="keranjang"
-                onclick="tambahKeranjang('Oppo Find X9 Ultra', 27999000)">
+
+            <!-- Tombol Keranjang -->
+            <button
+                class="keranjang"
+                onclick="tambahKeranjang(
+                    'Oppo Find X9 Ultra',
+                    27999000
+                )">
 
                 <i class="bi bi-cart-fill"></i>
                 Keranjang
