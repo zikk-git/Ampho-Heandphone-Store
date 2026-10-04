@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #d8c8e8;
-    color: #1a1a1a;
+    background-color: #0B101E;
+    color: #D5D8E0;
 }
 
 .header {
@@ -29,7 +29,8 @@ body {
 }
 
 nav {
-    background-color: #7b2c7b;
+    background-color: #1C2B42;
+    border: 1px solid #2F6977;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
@@ -51,13 +52,14 @@ nav a {
     text-decoration: none;
     padding: 10px 15px;
 
-    background-color: black;
+    background-color: #0B101E;
     border-radius: 5px;
     margin: 5px;
 }
 
 nav a:hover {
-    background-color: #333333;
+    background-color: #2F6977;
+    color: white;
 }
 
 /* Search bar */
@@ -69,17 +71,27 @@ nav a:hover {
 .search-bar input {
     width: 250px;
     padding: 9px 15px;
-    border: none;
+    background-color: #0B101E;
+    color: #D5D8E0; 
+    border: 1px solid #52B5B0;
     outline: none;
     border-radius: 20px 0 0 20px;
+}
+
+.search-bar input::placeholder {
+    color: #D5D8E0;
 }
 
 .search-bar button {
     padding: 9px 15px;
     border: none;
-    background-color: white;
+    background-color: #52B5B0;
     cursor: pointer;
     border-radius: 0 20px 20px 0;
+}
+
+.search-bar button:hover {
+    background-color: #A4F3E6;
 }
 
 .container {
@@ -88,21 +100,26 @@ nav a:hover {
     gap: 20px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid #2F6977;
     border-radius: 6px;
-    background-color: white;
+    background-color: #1C2B42;
 }
 
 .card-produk {
+    background-color: #0B101E;
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 0;
     margin:0;
     text-align: center;
+    border: 1px solid #2F6977;
+    border-radius: 6px;
+    overflow: hidden;
 }
  
 .card-produk:hover {
+    border-color: #52B5B0;
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(123, 44, 123, 0.25);
 }
@@ -115,16 +132,39 @@ nav a:hover {
     aspect-ratio: 2 / 3;
     object-fit: cover;
     margin: 0;
+    padding: 0;
 }
 
 .card-produk h4 {
     margin: 10px 0 5px;
+    color: #A4F3E6;
 }
 
 .card-produk p {
     margin: 5px 0;
+    color: #FFD25A;
 }
 
 .card-produk h2 {
     margin-top: 10px;
+    color: #FF7B25;
+}
+
+.keranjang {
+    display: inline-block;
+    background-color: #FF7B25;
+    color: #0B101E;
+
+    padding: 10px 20px;
+    margin: 10px auto;
+
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.keranjang:hover {
+    background-color: #FFD25A;
 }
