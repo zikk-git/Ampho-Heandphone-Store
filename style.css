@@ -298,35 +298,4 @@ nav a:hover {
     text-align: right;
 }
 
-.total-keranjang h2 {
-    color: #1C2B42;
-}
 
-#total-harga {
-    color: #FF7B25;
-}
-
-.checkout {
-    padding: 12px 25px;
-
-    background-color: #000000;
-    color: white;
-
-    border: none;
-    border-radius: 6px;
-
-    cursor: pointer;
-
-    font-size: 16px;
-}
-
-.checkout:hover {
-    background-color: #333333;
-}
-
-.keranjang-kosong {
-    padding: 40px;
-    text-align: center;
-
-    color: #777;
-}
